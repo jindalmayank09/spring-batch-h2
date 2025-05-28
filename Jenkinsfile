@@ -1,9 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('Git Checkout') {
+    stage('Checkout') {
       steps {
-        git branch: 'main', 'https://github.com/jindalmayank09/spring-batch-h2.git'
+        git branch: 'main', url: 'https://github.com/jindalmayank09/spring-batch-h2.git'
       }
     }
     stage('Build') {
