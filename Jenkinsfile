@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Checkout') {
       steps {
-        git 'https://github.com/jindalmayank09/spring-batch-h2.git'
+        git branch: 'main', 'https://github.com/jindalmayank09/spring-batch-h2.git'
       }
     }
     stage('Build') {
